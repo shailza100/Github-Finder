@@ -38,13 +38,13 @@ const Search = ({ setAlert }) => {
           className='btn btn-dark btn-block'
         />
       </form>
-      {
+      {githubContext.users.length > 0 && (
         <button
           className='btn btn-light btn-block'
           onClick={githubContext.clearUsers}>
           Clear
         </button>
-      }
+      )}
     </div>
   );
 };
